@@ -24,6 +24,6 @@ void quick_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void swap_array(int *array, size_t size, int *a, int *b);
-size_t Lomuto_partitioner(int *array, size_t size, ssize_t start_idx, ssize_t end_idx);
+size_t Lomuto_partitioner(int *array, size_t size, int start_idx, int end_idx);
 void quicksorter(int *array, size_t size, ssize_t start_idx, ssize_t end_idx);
 #endif
