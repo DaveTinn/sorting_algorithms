@@ -43,7 +43,7 @@ void quick_sort(int *array, size_t size)
  *
  * Return: pivot index
  */
-size_t Lomuto_partitioner(int *array, size_t size, int start_idx, int end_idx)
+size_t Lomuto_partitioner(int *array, size_t size, ssize_t start_idx, ssize_t end_idx)
 {
 	int piv_idx, piv_val;
 
@@ -68,7 +68,7 @@ size_t Lomuto_partitioner(int *array, size_t size, int start_idx, int end_idx)
  *
  * Return: Nothing
  */
-void quicksorter(int *array, size_t size, int start_idx, int end_idx)
+void quicksorter(int *array, size_t size, ssize_t start_idx, ssize_t end_idx)
 {
 	size_t piv_idx;
 
