@@ -50,8 +50,7 @@ size_t Lomuto_partitioner(int *array, size_t size, int start_idx, int end_idx)
 	{
 		if (array[i] < piv_val)
 		{
-			swap_array(array, size, &array[i], &array[piv_idx]);
-			piv_idx++;
+			swap_array(array, size, &array[i], &array[piv_idx++]);
 		}
 	}
 	swap_array(array, size, &array[piv_idx], &array[end_idx]);
