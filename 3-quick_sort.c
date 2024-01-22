@@ -43,15 +43,14 @@ void quick_sort(int *array, size_t size)
  */
 size_t Lomuto_partitioner(int *array, size_t size, int start_idx, int end_idx)
 {
-	int piv_idx;
-	int piv_val;
+	int piv_idx, piv_val, i;
 
 	piv_val = array[end_idx];
-	for (piv_idx = start_idx; start_idx < end_idx; start_idx++)
+	for (piv_idx = i = start_idx; i < end_idx; i++)
 	{
-		if (array[start_idx] < piv_val)
+		if (array[i] < piv_val)
 		{
-			swap_array(array, size, &array[start_idx], &array[piv_idx]);
+			swap_array(array, size, &array[i], &array[piv_idx]);
 			piv_idx++;
 		}
 	}
