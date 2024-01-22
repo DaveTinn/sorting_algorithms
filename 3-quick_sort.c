@@ -36,8 +36,8 @@ void quick_sort(int *array, size_t size)
  * Lomuto_partitioner - function to partition the array of integers
  * @array: pointer to the array of integers
  * @size: size of array
- * @f_idx: starting index of partition
- * @l_idx: ending index of partition
+ * @start_idx: starting index of partition
+ * @end_idx: ending index of partition
  *
  * Return: pivot index
  */
