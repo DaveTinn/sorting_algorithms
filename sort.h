@@ -17,6 +17,13 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+/**
+ * enum kind_e - Describes the suits of a deck of cards
+ * @SPADE: Represents the suit Spade
+ * @HEART: Represents the suit Heart
+ * @CLUB: Represents the suit Club
+ * @DIAMOND: Represents the suit Diamond
+ */
 typedef enum kind_e
 {
 	SPADE = 0,
